@@ -1,0 +1,7 @@
+<h1>meds</h1>
+
+<ul>
+<% @meds.each do |med|%>
+	<li><%= med.name %>, <%= med.dose %> <%= med.route %> <%= med.dose_timing %></li>
+<% end %>
+</ul>

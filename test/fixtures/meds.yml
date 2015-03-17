@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dose: MyString
+  start_date: 2015-03-17 13:39:45
+  end_date: 2015-03-17 13:39:45
+  route: MyString
+  consumer_id: MyString
+  dose_timing: MyString
+
+two:
+  name: MyString
+  dose: MyString
+  start_date: 2015-03-17 13:39:45
+  end_date: 2015-03-17 13:39:45
+  route: MyString
+  consumer_id: MyString
+  dose_timing: MyString
