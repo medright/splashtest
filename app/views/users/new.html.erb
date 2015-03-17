@@ -1,0 +1,15 @@
+<h1>(evermed)research profile:</h1>
+
+<div class="form">
+<%= form_for :user, url: '/users' do |f| %>
+
+<p class="content">Name: <%= f.text_field :name %></p>
+<p class="content">Email: <%= f.text_field :email %></p>
+<p class="content">Role: <%= f.text_field :role %></p>
+<p class="content">Password: <%= f.password_field :password %></p>
+<p class="content">Password Confirmation: <%= f.password_field :password_confirmation %></p>
+<p class="content">Pin: <%= f.text_field :pin %></p>
+<p class="content"><%= f.submit "Submit" %></p>
+
+<% end %>
+</div>
