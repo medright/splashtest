@@ -2,6 +2,9 @@
 
 <ul>
 <% @meds.each do |med|%>
+	<h2><%= link_to(med.name, med_path(med)) %></h2>
 	<li><%= med.name %>, <%= med.dose %> <%= med.route %> <%= med.dose_timing %></li>
 <% end %>
+
+<%= link_to("Add Med", new_med_path) %>
 </ul>

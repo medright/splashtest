@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150317173945) do
+ActiveRecord::Schema.define(version: 20150319215432) do
 
   create_table "meds", force: :cascade do |t|
     t.string   "name"
@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(version: 20150317173945) do
     t.string   "route"
     t.string   "consumer_id"
     t.string   "dose_timing"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "ordering_provider"
   end
 
   add_index "meds", ["consumer_id"], name: "index_meds_on_consumer_id"
