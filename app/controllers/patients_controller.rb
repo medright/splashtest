@@ -36,7 +36,7 @@ class PatientsController < ApplicationController
 	def list_params
 		params.require(:patient).permit(:first_name, :last_name, :dob, :allergies,
 			:code, :notes, :orders, :cbcNa, :cbcCl, :cbcBUN, :cbcK, :cmpHco3,
-			:cmpCr, :cbcWbc, :hgb, :htc, :plt, :glucose, :bpSys, :bpDia, :o2, :pulse,
+			:cmpCr, :cbcWbc, :hbg, :htc, :plt, :glucose, :bpSys, :bpDia, :o2, :pulse,
 			:resp, :temp)
 	end
 end

@@ -1,0 +1,104 @@
+<%= form_for(@patient) do |f| %>
+	<p>
+		<%= f.label :first_name %><br/>
+		<%= f.text_field :first_name, autofocus: true %>
+	</p>
+	<p>
+		<%= f.label :last_name %><br/>
+		<%= f.text_field :last_name %>
+	</p>
+	<p>
+		<%= f.label :dob %><br/>
+		<%= f.date_select :dob %>
+	</p>
+	<p>
+		<%= f.label :allergies %><br/>
+		<%= f.text_field :allergies %>
+	</p>
+	<p>
+		<%= f.label :code %><br/>
+		<%= f.text_field :code %>
+	</p>
+	<p>
+		<%= f.label :notes %><br/>
+		<%= f.text_field :notes %>
+	</p>
+	<p>
+		<%= f.label :orders %><br/>
+		<%= f.text_field :orders %>
+	</p>
+	<p>
+		<%= f.label :cbcNa %><br/>
+		<%= f.text_field :cbcNa %>
+	</p>
+	<p>
+		<%= f.label :cbcCl %><br/>
+		<%= f.text_field :cbcCl %>
+	</p>
+	<p>
+		<%= f.label :cbcBUN %><br/>
+		<%= f.text_field :cbcBUN %>
+	<K>
+	<p>
+		<%= f.label :cbcK %><br/>
+		<%= f.text_field :cbc %>
+	</p>
+	<p>
+		<%= f.label :cmpHco3 %><br/>
+		<%= f.text_field :cmpHco3 %>
+	</p>
+	<p>
+		<%= f.label :cmpCr %><br/>
+		<%= f.text_field :cmpCr %>
+	</p>
+	<p>
+		<%= f.label :cbcWbc %><br/>
+		<%= f.text_field :cbcWbc %>
+	</p>
+	<p>
+		<%= f.label :hbg %><br/>
+		<%= f.text_field :hbg %>
+	</p>
+	<p>
+		<%= f.label :htc %><br/>
+		<%= f.text_field :htc %>
+	</p>
+	<p>
+		<%= f.label :plt %><br/>
+		<%= f.text_field :plt %>
+	</p>
+	<p>
+		<%= f.label :glucose %><br/>
+		<%= f.text_field :glucose %>
+	</p>
+	<p>
+		<%= f.label :bpSys %><br/>
+		<%= f.text_field :bpSys %>
+	</p>
+	<p>
+		<%= f.label :bpDia %><br/>
+		<%= f.text_field :bpDia %>
+	</p>
+	<p>
+		<%= f.label :o2 %><br/>
+		<%= f.text_field :o2 %>
+	</p>
+	<p>
+		<%= f.label :pulse %><br/>
+		<%= f.text_field :pulse %>
+	</p>
+	<p>
+		<%= f.label :resp %><br/>
+		<%= f.text_field :resp %>
+	</p>
+	<p>
+		<%= f.label :temp %><br/>
+		<%= f.text_field :temp %>
+	</p>
+	
+	<p>
+		<%= f.submit %>
+		<%= link_to "Cancel", patients_path %>
+	</p>
+	
+<% end %>
