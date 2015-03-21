@@ -1,0 +1,30 @@
+
+
+<article>
+  <header>
+    <h1><%= @patient.name %></h1>
+  </header>
+  <h2>First Name:</h2>
+  <p>
+    <%= @patient.first_name %>
+  </p>
+  <h3>Last Name:</h3>
+  <p>
+    <%= @patient.last_name %>
+  </p>
+  <h3>DOB:</h3>
+  <p>
+    <%= @patient.dob %>
+  </p>
+  <h3>Code Status:</h3>
+  <p>
+    <%= @patient.code %>
+  </p>
+
+</article>
+
+<nav>
+  <%= link_to("all meds", root_path) %>
+  <%= link_to("edit", edit_med_path(@med)) %>
+  <%= link_to "delete", med_path(@med), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>

@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  dob: 2015-03-20
+  allergies: MyText
+  code: MyString
+  notes: MyText
+  orders: MyText
+  cbcNa: MyString
+  cbcCl: MyString
+  cbcBUN: MyString
+  cbc: 
+  cmpHco3: MyString
+  cmpCr: MyString
+  cbcWbc: MyString
+  hbg: MyString
+  htc: MyString
+  plt: MyString
+  glucose: MyString
+  bpSys: MyString
+  bpDia: MyString
+  o2: MyString
+  resp: MyString
+  temp: MyString
+  provider_id: MyString
+  consumer_id: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  dob: 2015-03-20
+  allergies: MyText
+  code: MyString
+  notes: MyText
+  orders: MyText
+  cbcNa: MyString
+  cbcCl: MyString
+  cbcBUN: MyString
+  cbc: 
+  cmpHco3: MyString
+  cmpCr: MyString
+  cbcWbc: MyString
+  hbg: MyString
+  htc: MyString
+  plt: MyString
+  glucose: MyString
+  bpSys: MyString
+  bpDia: MyString
+  o2: MyString
+  resp: MyString
+  temp: MyString
+  provider_id: MyString
+  consumer_id: MyString

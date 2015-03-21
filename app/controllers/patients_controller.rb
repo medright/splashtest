@@ -1,23 +1,31 @@
 class PatientsController < ApplicationController
 	def index
-		Patient.find(params[:id])	
+		@patient = Patient.all	
 	end
 
 	def show
-		Patient.find(params[:id])
+		@patient = Patient.find(params[:id])
 	end
 
 	def edit
 		@patient = Patient.find(params[:id])
 	end
 
+	def update
+		@patient = Patient.find(params[:id])
+		@patient.update(list_params)
+		redirect_to @patient
+	end
+
 	def create
 		@patient = Patient.new(list_params)
-		if @patient.save
-			head 200
-		else
-			head 500
-		end
+		@patient.save
+	end
+
+	def destroy
+		@patient = Patient.find(params[:id])
+		@patient.destroy
+		redirect_to patients_url
 	end
 
 	def new

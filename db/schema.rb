@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150319215432) do
+ActiveRecord::Schema.define(version: 20150321011302) do
 
   create_table "meds", force: :cascade do |t|
     t.string   "name"
@@ -27,6 +27,36 @@ ActiveRecord::Schema.define(version: 20150319215432) do
   end
 
   add_index "meds", ["consumer_id"], name: "index_meds_on_consumer_id"
+
+  create_table "patients", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.date     "dob"
+    t.text     "allergies"
+    t.string   "code"
+    t.text     "notes"
+    t.text     "orders"
+    t.string   "cbcNa"
+    t.string   "cbcCl"
+    t.string   "cbcBUN"
+    t.string   "cbc"
+    t.string   "cmpHco3"
+    t.string   "cmpCr"
+    t.string   "cbcWbc"
+    t.string   "hbg"
+    t.string   "htc"
+    t.string   "plt"
+    t.string   "glucose"
+    t.string   "bpSys"
+    t.string   "bpDia"
+    t.string   "o2"
+    t.string   "resp"
+    t.string   "temp"
+    t.string   "provider_id"
+    t.string   "consumer_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
