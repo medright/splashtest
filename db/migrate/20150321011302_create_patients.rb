@@ -11,7 +11,7 @@ class CreatePatients < ActiveRecord::Migration
       t.string :cbcNa
       t.string :cbcCl
       t.string :cbcBUN
-      t.string :cbc
+      t.string :cbcK
       t.string :cmpHco3
       t.string :cmpCr
       t.string :cbcWbc
