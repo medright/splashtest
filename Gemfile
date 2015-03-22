@@ -37,6 +37,8 @@ gem 'devise'
 
 gem 'activeadmin', '~> 1.0.0.pre1'
 
+gem 'rails_12factor', group: :production
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

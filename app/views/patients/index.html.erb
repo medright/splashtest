@@ -5,6 +5,6 @@
 	<h2><%= link_to(patient.first_name, patient_path(patient)) %></h2>
 	<li><%= patient.first_name %>, <%= patient.last_name %> <%= patient.dob %> <%= patient.allergies %></li>
 <% end %>
-
-<%= link_to("Add Patient", new_patient_path) %>
 </ul>
+</div>
+<%= link_to("Add Patient", new_patient_path) %>
