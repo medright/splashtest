@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150321203008) do
+ActiveRecord::Schema.define(version: 20150321202237) do
 
   create_table "meds", force: :cascade do |t|
     t.string   "name"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20150321203008) do
     t.string   "cbcNa"
     t.string   "cbcCl"
     t.string   "cbcBUN"
-    t.string   "cbc"
+    t.string   "cbcK"
     t.string   "cmpHco3"
     t.string   "cmpCr"
     t.string   "cbcWbc"
