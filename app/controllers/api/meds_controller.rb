@@ -6,7 +6,7 @@ class Api::MedsController < ApplicationController
 	end
 
 	def show
-		list = Med.find(params[:id])
+		list = Med.find(params[:id, :first_name, :last_name])
 		render json: list
 	end
 
