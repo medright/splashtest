@@ -1,104 +1,110 @@
+<div>
+
 <%= form_for(@patient) do |f| %>
-	<p>
+<ul>
+	<li>
 		<%= f.label :first_name %><br/>
 		<%= f.text_field :first_name, autofocus: true %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :last_name %><br/>
 		<%= f.text_field :last_name %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :dob %><br/>
 		<%= f.date_select :dob %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :allergies %><br/>
 		<%= f.text_field :allergies %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :code %><br/>
 		<%= f.text_field :code %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :notes %><br/>
 		<%= f.text_field :notes %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :orders %><br/>
 		<%= f.text_field :orders %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :cbcNa %><br/>
 		<%= f.text_field :cbcNa %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :cbcCl %><br/>
 		<%= f.text_field :cbcCl %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :cbcBUN %><br/>
 		<%= f.text_field :cbcBUN %>
-	<K>
-	<p>
+	<li>
+	<li>
 		<%= f.label :cbcK %><br/>
-		<%= f.text_field :cbc %>
-	</p>
-	<p>
+		<%= f.text_field :cbcK %>
+	</li>
+	<li>
 		<%= f.label :cmpHco3 %><br/>
 		<%= f.text_field :cmpHco3 %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :cmpCr %><br/>
 		<%= f.text_field :cmpCr %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :cbcWbc %><br/>
 		<%= f.text_field :cbcWbc %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :hbg %><br/>
 		<%= f.text_field :hbg %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :htc %><br/>
 		<%= f.text_field :htc %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :plt %><br/>
 		<%= f.text_field :plt %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :glucose %><br/>
 		<%= f.text_field :glucose %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :bpSys %><br/>
 		<%= f.text_field :bpSys %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :bpDia %><br/>
 		<%= f.text_field :bpDia %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :o2 %><br/>
 		<%= f.text_field :o2 %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :pulse %><br/>
 		<%= f.text_field :pulse %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :resp %><br/>
 		<%= f.text_field :resp %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :temp %><br/>
 		<%= f.text_field :temp %>
-	</p>
+	</li>
 	
-	<p>
+	<li>
 		<%= f.submit %>
 		<%= link_to "Cancel", patients_path %>
-	</p>
+	</li>
 	
 <% end %>
+</ul>
+
+</div>
