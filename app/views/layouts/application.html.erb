@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Evrsite</title>
+  <title>(evr)</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<header class="topbar">	
+		<div class="topbar">
+			<div class="toptile">
+				<p>John Doe<br>
+			  12/24/82<br>
+			  allergy: sulfa, codeine.<br>
+			  Primary: Dr Doe<br>
+			  Surgeon: Dr Mallon<br> 
+			</p>
+			</div>
+			<div class="toptile">
+				notes
+			</div>
+			<div class="toptile">
+				labs
+			</div>
+			<div class="toptile">
+				VS
+			</div>
+			<div class="toptile">
+			  images (xray, ct, mri, ultra sound, PET scan)
+			</div>
+		</div>
+	</header>	
 
-</body>
+		
+
+		<div class="rtbar">
+			<div class="rttile">
+				start stream
+			</div>
+			<div class="rttile">
+				download chart
+			</div>
+			<div class="rttile">
+				upload image
+			</div>
+		</div>
+
+		<div class="content">
+			<%= yield %>
+		</div>
+
+	</body>
 </html>
