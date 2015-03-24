@@ -1,7 +1,5 @@
 body {
-	background-image: image-url('evrsignup.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
+	margin: 0;
 }
 
 .topbar {
@@ -9,7 +7,7 @@ body {
 	flex-wrap: nowrap;
 	border: 1px solid red;
 	width: 100vw;
-	height: 20vh;
+	height: 18vh;
 }
 
 .rtbar {
@@ -20,18 +18,31 @@ body {
 	height: 80vh;
 	position: fixed;
 	right: 0px;
+	top: 22vh;
+}
+
+a {
+	color: white;
 }
 
 .content {
-	display: -webkit-flex;
-	overflow: auto;
-	flex-wrap: nowrap;
 	background-image: image-url('evrsignup.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-color: blue;
+	position: fixed;
+	top: 22vh;
+	width: 89vw;
+	overflow-x: scroll;
+	overflow-y: scroll; 
+	border: 0.5px solid red;
+	align-content: stretch;
 	
-	height: 80vh;
-	width: 89.5vw;
+}
+
+.code {
+	margin: 0;
+	padding: 0;
 }
 
 /**********************************
@@ -57,3 +68,10 @@ RTTILE
 	background: #00FFFF;
 	border: 1px solid red;
 }
+
+.content label {
+	color: white;
+}
+
+
+

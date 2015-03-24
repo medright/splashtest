@@ -1,18 +1,13 @@
-
-
-<article>
-  <header>
-    <h1 class="code">Code Status: <%= @patient.code %></h1>
-  </header>
-  <h2>First Name:</h2>
-  <div class="edits_list" >
-<%= render 'form' %>
-</div>
-
-</article>
+<h1 class="code">Code Status: <%= @patient.code %></h1>
 
 <nav>
   <%= link_to("all patients", patients_path) %>
   <%= link_to("edit", edit_patient_path(@patient)) %>
   <%= link_to "delete", patient_path(@patient), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
+  
+<div class="edits_list" >
+<%= render 'form' %>
+</div>
+
+

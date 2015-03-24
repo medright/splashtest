@@ -1,7 +1,7 @@
-<div>
+
 
 <%= form_for(@patient) do |f| %>
-<ul>
+<ul class="code">
 	<li>
 		<%= f.label :first_name %><br/>
 		<%= f.text_field :first_name, autofocus: true %>
@@ -106,5 +106,3 @@
 	
 <% end %>
 </ul>
-
-</div>

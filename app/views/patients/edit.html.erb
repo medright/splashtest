@@ -1,5 +1,6 @@
-<h1>Editing: <%= @patient.first_name %></h1>
+<h1 class="code">Editing: <%= @patient.first_name %></h1>
+
 <div class="edits_list" >
+<%= link_to("all patients", patients_path) %>
 <%= render 'form' %>
 </div>
-<%= link_to("all patients", patients_path) %>
