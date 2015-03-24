@@ -8,6 +8,7 @@ body {
 	border: 1px solid red;
 	width: 100vw;
 	height: 18vh;
+	color: #FF6600; 
 }
 
 .rtbar {
@@ -19,30 +20,38 @@ body {
 	position: fixed;
 	right: 0px;
 	top: 22vh;
+	color: #FF6600;
 }
 
 a {
-	color: white;
+	color: #00FFFF;
 }
 
 .content {
 	background-image: image-url('evrsignup.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-color: blue;
+	background-color: #707074;
 	position: fixed;
 	top: 22vh;
 	width: 89vw;
 	overflow: auto; 
 	border: 0.5px solid red;
-	align-content: stretch;
-	
 }
 
 .code {
 	margin: 0;
 	padding: 0;
-	overflow: auto;
+	overflow: auto;	
+	color: white;
+}
+
+.form_ul {
+	display: -webkit-flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
 }
 
 /**********************************
@@ -70,7 +79,7 @@ RTTILE
 }
 
 .content label {
-	color: white;
+	color: #00FFFF;
 }
 
 
