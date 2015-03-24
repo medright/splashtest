@@ -33,8 +33,7 @@ a {
 	position: fixed;
 	top: 22vh;
 	width: 89vw;
-	overflow-x: scroll;
-	overflow-y: scroll; 
+	overflow: auto; 
 	border: 0.5px solid red;
 	align-content: stretch;
 	
@@ -43,6 +42,7 @@ a {
 .code {
 	margin: 0;
 	padding: 0;
+	overflow: auto;
 }
 
 /**********************************
