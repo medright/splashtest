@@ -7,7 +7,10 @@
 </nav>
   
 <div class="edits_list" >
-<%= render 'form' %>
+<ul>
+	<li><%= @patient.first_name %>, <%= @patient.last_name %> <%= @patient.dob %> 
+	<%= @patient.allergies %> <%= @patient.code %> <%= @patient.notes %></li>
+</ul>
 </div>
 
 

@@ -1,10 +1,14 @@
-
+<nav>
+  <%= link_to("all meds", root_path) %>
+  <%= link_to("edit", edit_med_path(@med)) %>
+  <%= link_to "delete", med_path(@med), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>
 
 <article>
   <header>
-    <h1><%= @med.name %></h1>
+    <h2><%= @med.name %></h2>
   </header>
-  <h2>Dose:</h2>
+  <h3>Dose:</h3>
   <p>
     <%= @med.dose %>
   </p>
@@ -20,11 +24,5 @@
   <p>
     <%= @med.ordering_provider %>
   </p>
-
 </article>
 
-<nav>
-  <%= link_to("all meds", root_path) %>
-  <%= link_to("edit", edit_med_path(@med)) %>
-  <%= link_to "delete", med_path(@med), method: :delete, data: { confirm: 'Are you sure?'} %>
-</nav>

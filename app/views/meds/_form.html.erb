@@ -1,36 +1,38 @@
+<ul class="form_ul">
 <%= form_for(@med) do |f| %>
-	<p>
+	<li>
 		<%= f.label :name %><br/>
 		<%= f.text_field :name, autofocus: true %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :dose %><br/>
 		<%= f.text_field :dose %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :route %><br/>
 		<%= f.text_field :route %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :dose_timing %><br/>
 		<%= f.text_field :dose_timing %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :ordering_provider %><br/>
 		<%= f.text_field :ordering_provider %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :start_date %><br/>
 		<%= f.date_select :start_date %>
-	</p>
-	<p>
+	</li>
+	<li>
 		<%= f.label :end_date %><br/>
 		<%= f.date_select :end_date %>
-	</p>
+	</li>
 	
-	<p>
+	<li>
 		<%= f.submit %>
 		<%= link_to "Cancel", meds_path %>
-	</p>
+	</li>
 	
 <% end %>
+</ul>
