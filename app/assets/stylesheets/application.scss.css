@@ -1,9 +1,10 @@
 body {
 	margin: 0;
+	overflow: scroll;
 }
 
 .topbar {
-	display: -webkit-flex;
+	display: flex;
 	flex-wrap: nowrap;
 	border: 1px solid red;
 	width: 100vw;
@@ -12,7 +13,7 @@ body {
 }
 
 .rtbar {
-	display: -webkit-flex;
+	display: flex;
 	flex-direction: column;
 	border: 1px #B2F0B2 solid;
 	width: 10vw;
@@ -28,15 +29,19 @@ a {
 }
 
 .content {
-	/*background-image: image-url('evrsignup.jpg');
-	background-repeat: no-repeat; */
+	background: image-url('evrsignup.jpg');
+	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: #707074;
 	position: fixed;
 	top: 22vh;
-	width: 89vw;
-	overflow: auto; 
+	width: 89vw; 
 	border: 0.5px solid red;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	overflow: scroll;
+	column-count: 1;
 }
 
 .code {
@@ -47,17 +52,17 @@ a {
 }
 
 .form_ul {
-	display: -webkit-flex;
+	display: flex;
 	flex-direction: column;
-	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	overflow: scroll;
+	height: 100vh;
 }
 
-.form_div {
-	-webkit-flex-wrap: wrap;
-	flex-direction: column;
+div {
+	display: flex;
 }
 
 /**********************************
@@ -88,9 +93,7 @@ RTTILE
 	color: #00FFFF;
 }
 
-.edits_list {
-	overflow: scroll;
-}
+
 
 
 
