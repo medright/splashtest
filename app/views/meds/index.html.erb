@@ -1,4 +1,5 @@
 <h1>meds</h1>
+<%= link_to("Add Med", new_med_path) %>
 	<ul>
 	<% @meds.each do |med|%>
 		<h2><%= link_to(med.name, med_path(med)) %></h2>
@@ -8,5 +9,5 @@
 	<% end %>
 	</ul>
 
-<%= link_to("Add Med", new_med_path) %>
+
 

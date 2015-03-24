@@ -28,8 +28,8 @@ a {
 }
 
 .content {
-	background-image: image-url('evrsignup.jpg');
-	background-repeat: no-repeat;
+	/*background-image: image-url('evrsignup.jpg');
+	background-repeat: no-repeat; */
 	background-size: 100%;
 	background-color: #707074;
 	position: fixed;
