@@ -53,12 +53,17 @@ a {
 
 .form_ul {
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	overflow: scroll;
-	height: 68vh;
+	height: 64vh;
+}
+
+.pt_index {
+	display: flex;
+	flex-direction: column;
+	height: 78vh;
 }
 
 div {
