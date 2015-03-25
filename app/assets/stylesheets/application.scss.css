@@ -28,9 +28,11 @@ a {
 	color: #00FFFF;
 }
 
+.toptile a {
+	color: #FF6600;
+}
+
 .content {
-	background: image-url('evrsignup.jpg');
-	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: #707074;
 	position: fixed;
@@ -43,6 +45,8 @@ a {
 	overflow: scroll;
 	column-count: 1;
 }
+
+
 
 .code {
 	margin: 0;
@@ -57,13 +61,13 @@ a {
 	margin: 0;
 	padding: 0;
 	overflow: scroll;
-	height: 64vh;
+	height: 60vh;
 }
 
-.pt_index {
+.index {
 	display: flex;
 	flex-direction: column;
-	height: 78vh;
+	height: 76vh;
 }
 
 div {
@@ -81,6 +85,8 @@ TOPTILE
 	border: 1px solid red;
 	float: right;
 	overflow: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 /**********************************
