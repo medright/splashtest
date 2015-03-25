@@ -1,0 +1,33 @@
+<nav>
+  <%= link_to("all notes", notes_path) %>
+  <%= link_to("edit", edit_note_path(@note)) %>
+  <%= link_to "delete", note_path(@note), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>
+
+<div class="index">
+  <h3>Type:</h3>
+  <p>
+    <%= @note.service %>
+  </p>
+  <h3>Subjective:</h3>
+  <p>
+    <%= @note.subjective %>
+  </p>
+  <h3>Objective:</h3>
+  <p>
+    <%= @note.objective %>
+  </p>
+  <h3>Assessment:</h3>
+  <p>
+    <%= @note.assessment %>
+  </p>
+  <h3>Plan:</h3>
+  <p>
+    <%= @note.plan %>
+  </p>
+  <h3>Provider:</h3>
+  <p>
+    <%= @note.ordering_provider %>
+  </p>
+</div>
+

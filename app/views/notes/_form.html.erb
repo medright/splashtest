@@ -1,0 +1,35 @@
+<ul class="form_ul">
+
+<%= form_for(@note) do |f| %>
+	<li>
+		<%= f.label :service %><br/>
+		<%= f.text_field :service, autofocus: true %>
+	</li>
+	<li>
+		<%= f.label :subjective %><br/>
+		<%= f.text_field :subjective %>
+	</li>
+	<li>
+		<%= f.label :objective %><br/>
+		<%= f.text_field :objective %>
+	</li>
+	<li>
+		<%= f.label :assessment %><br/>
+		<%= f.text_field :assessment %>
+	</li>
+	<li>
+		<%= f.label :plan %><br/>
+		<%= f.text_field :plan %>
+	</li>
+	<li>
+		<%= f.label :ordering_provider %><br/>
+		<%= f.text_field :ordering_provider %>
+	</li>
+	
+	<li>
+		<%= f.submit %>
+		<%= link_to "Cancel", notes_path %>
+	</li>
+	
+<% end %>
+</ul>

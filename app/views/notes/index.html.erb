@@ -1,0 +1,12 @@
+<div class="index">
+<h3>Notes list:</h3>
+<%= link_to("Add Note", new_note_path) %>
+	<ul>
+	<% @note.each do |note|%>
+		<h3><%= link_to(note.service, note_path(note)) %></h3>
+		<li>
+			<%= note.ordering_provider %> 
+		</li>
+	<% end %>
+	</ul>
+</div>

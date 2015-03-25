@@ -4,7 +4,9 @@ Rails.application.routes.draw do
     resources :patients
   end
 
-    resources :patients :notes
+    resources :patients
+
+    resources :notes
 
 
   # The priority is based upon order of creation: first created -> highest priority.
