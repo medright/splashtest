@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bpsys: MyString
+  bpdia: MyString
+  o2: MyString
+  pulse: MyString
+  resp: MyString
+  temp: MyString
+
+two:
+  bpsys: MyString
+  bpdia: MyString
+  o2: MyString
+  pulse: MyString
+  resp: MyString
+  temp: MyString

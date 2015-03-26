@@ -1,0 +1,35 @@
+<ul class="form_ul">
+
+<%= form_for(@vital_sign) do |f| %>
+	<li>
+		<%= f.label :bpsys %><br/>
+		<%= f.text_field :bpsys, autofocus: true %>
+	</li>
+	<li>
+		<%= f.label :bpdia %><br/>
+		<%= f.text_field :bpdia %>
+	</li>
+	<li>
+		<%= f.label :o2 %><br/>
+		<%= f.text_field :o2 %>
+	</li>
+	<li>
+		<%= f.label :pulse %><br/>
+		<%= f.text_field :pulse %>
+	</li>
+	<li>
+		<%= f.label :resp %><br/>
+		<%= f.text_field :resp %>
+	</li>
+	<li>
+		<%= f.label :temp %><br/>
+		<%= f.text_field :temp %>
+	</li>
+	
+	<li>
+		<%= f.submit %>
+		<%= link_to "Cancel", notes_path %>
+	</li>
+	
+<% end %>
+</ul>

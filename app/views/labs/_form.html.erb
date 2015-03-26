@@ -1,0 +1,51 @@
+<ul class="form_ul">
+
+<%= form_for(@lab) do |f| %>
+	<li>
+		<%= f.label :na %><br/>
+		<%= f.text_field :na, autofocus: true %>
+	</li>
+	<li>
+		<%= f.label :cl %><br/>
+		<%= f.text_field :cl %>
+	</li>
+	<li>
+		<%= f.label :bun %><br/>
+		<%= f.text_field :bun %>
+	</li>
+	<li>
+		<%= f.label :k %><br/>
+		<%= f.text_field :k %>
+	</li>
+	<li>
+		<%= f.label :hco3 %><br/>
+		<%= f.text_field :hco3 %>
+	</li>
+	<li>
+		<%= f.label :wbc %><br/>
+		<%= f.text_field :wbc %>
+	</li>
+	<li>
+		<%= f.label :hgb %><br/>
+		<%= f.text_field :hgb %>
+	</li>
+	<li>
+		<%= f.label :htc %><br/>
+		<%= f.text_field :htc %>
+	</li>
+	<li>
+		<%= f.label :plt %><br/>
+		<%= f.text_field :plt %>
+	</li>
+	<li>
+		<%= f.label :glucose %><br/>
+		<%= f.text_field :glucose %>
+	</li>
+	
+	<li>
+		<%= f.submit %>
+		<%= link_to "Cancel", notes_path %>
+	</li>
+	
+<% end %>
+</ul>

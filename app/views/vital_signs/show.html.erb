@@ -1,0 +1,32 @@
+<nav>
+  <%= link_to("all vitals", vital_signs_path) %>
+  <%= link_to("edit", edit_vital_sign_path(@vital_sign)) %>
+  <%= link_to "delete", vital_sign_path(@vital_sign), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>
+
+<div class="index">
+  <h3>BP Systolic:</h3>
+  <p>
+    <%= @vital_sign.bpsys %>
+  </p>
+  <h3>BP Diastolic:</h3>
+  <p>
+    <%= @vital_sign.bpdia %>
+  </p>
+  <h3>O2:</h3>
+  <p>
+    <%= @vital_sign.o2 %>
+  </p>
+  <h3>Pulse:</h3>
+  <p>
+    <%= @vital_sign.pulse %>
+  </p>
+  <h3>Resp:</h3>
+  <p>
+    <%= @vital_sign.resp %>
+  </p>
+  <h3>Temp:</h3>
+  <p>
+    <%= @vital_sign.temp %>
+  </p>
+</div>

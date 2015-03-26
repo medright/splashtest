@@ -38,6 +38,6 @@ class PatientsController < ApplicationController
 		params.require(:patient).permit(:first_name, :last_name, :dob, :allergies,
 			:code, :notes, :orders, :cbcNa, :cbcCl, :cbcBUN, :cbcK, :cmpHco3,
 			:cmpCr, :cbcWbc, :hbg, :htc, :plt, :glucose, :bpSys, :bpDia, :o2, :pulse,
-			:resp, :temp)
+			:resp, :temp, :provider_id)
 	end
 end

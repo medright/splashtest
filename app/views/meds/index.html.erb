@@ -2,7 +2,7 @@
 <h3>Med list:</h3>
 <%= link_to("Add Med", new_med_path) %>
 	<ul>
-	<% @meds.each do |med|%>
+	<% @meds.each do |med| %>
 		<h3><%= link_to(med.name, med_path(med)) %></h3>
 		<li><%= med.name %>, <%= med.dose %> <%= med.route %> <%= med.dose_timing %>
 			<%= med.ordering_provider %>, 

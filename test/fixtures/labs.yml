@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  na: MyString
+  cl: MyString
+  bun: MyString
+  k: MyString
+  hco3: MyString
+  cr: MyString
+  wbc: MyString
+  hgb: MyString
+  htc: MyString
+  plt: MyString
+  glucose: MyString
+
+two:
+  na: MyString
+  cl: MyString
+  bun: MyString
+  k: MyString
+  hco3: MyString
+  cr: MyString
+  wbc: MyString
+  hgb: MyString
+  htc: MyString
+  plt: MyString
+  glucose: MyString

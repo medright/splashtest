@@ -1,0 +1,52 @@
+<nav>
+  <%= link_to("all labs", labs_path) %>
+  <%= link_to("edit", edit_lab_path(@lab)) %>
+  <%= link_to "delete", lab_path(@lab), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>
+
+<div class="index">
+  <h3>Sodium:</h3>
+  <p>
+    <%= @lab.na %>
+  </p>
+  <h3>Cloride:</h3>
+  <p>
+    <%= @lab.cl %>
+  </p>
+  <h3>BUN:</h3>
+  <p>
+    <%= @lab.bun %>
+  </p>
+  <h3>Potassium:</h3>
+  <p>
+    <%= @lab.k %>
+  </p>
+  <h3>HCO3:</h3>
+  <p>
+    <%= @lab.hco3 %>
+  </p>
+  <h3>Cr:</h3>
+  <p>
+    <%= @lab.cr %>
+  </p>
+   <h3>WBC:</h3>
+  <p>
+    <%= @lab.wbc %>
+  </p>
+  <h3>HGB:</h3>
+  <p>
+    <%= @lab.hgb %>
+  </p>
+  <h3>Hematocrit:</h3>
+  <p>
+    <%= @lab.htc %>
+  </p>
+  <h3>Platelet:</h3>
+  <p>
+    <%= @lab.plt %>
+  </p>
+  <h3>Glucose:</h3>
+  <p>
+    <%= @lab.glucose %>
+  </p>
+</div>

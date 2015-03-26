@@ -1,0 +1,12 @@
+<div class="index">
+<h3>Labs list:</h3>
+<%= link_to("Add Labs", new_lab_path) %>
+	<ul>
+	<% @lab.each do |lab|%>
+		<h3><%= link_to(lab.na, lab_path(lab)) %></h3>
+		<li>
+			<%= lab.bun %> 
+		</li>
+	<% end %>
+	</ul>
+</div>
