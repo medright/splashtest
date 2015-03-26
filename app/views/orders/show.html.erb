@@ -1,0 +1,29 @@
+<nav>
+  <%= link_to("all orders", orders_path) %>
+  <%= link_to("edit", edit_order_path(@order)) %>
+  <%= link_to "delete", order_path(@order), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>
+
+<div class="index">
+  <h3>Name:</h3>
+  <p>
+    <%= @order.name %>
+  </p>
+  <h3>Problem:</h3>
+  <p>
+    <%= @order.problem %>
+  </p>
+  <h3>Details:</h3>
+  <p>
+    <%= @order.details %>
+  </p>
+  <h3>Ordering Provider:</h3>
+  <p>
+    <%= @order.ordering_provider %>
+  </p>
+  <h3>Patient:</h3>
+  <p>
+    <%= @order.patient %>
+  </p>
+</div>
+

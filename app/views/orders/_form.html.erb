@@ -1,0 +1,31 @@
+<ul class="form_ul">
+
+<%= form_for(@order) do |f| %>
+	<li>
+		<%= f.label :name %><br/>
+		<%= f.text_field :name, autofocus: true %>
+	</li>
+	<li>
+		<%= f.label :problem_list_item %><br/>
+		<%= f.text_field :problem %>
+	</li>
+	<li>
+		<%= f.label :details %><br/>
+		<%= f.text_field :details %>
+	</li>
+	<li>
+		<%= f.label :ordering_provider %><br/>
+		<%= f.text_field :ordering_provider %>
+	</li>
+	<li>
+		<%= f.label :patient %><br/>
+		<%= f.text_field :patient %>
+	</li>
+	
+	<li>
+		<%= f.submit %>
+		<%= link_to "Cancel", notes_path %>
+	</li>
+	
+<% end %>
+</ul>
