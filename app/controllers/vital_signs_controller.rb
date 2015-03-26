@@ -37,6 +37,6 @@ class VitalSignsController < ApplicationController
 	private
 
 	def vital_sign_params
-		params.require(:vital_sign).permit(:name, :dose, :dose_timing, :ordering_provider, :route, :start_date, :end_date)
+		params.require(:vital_sign).permit(:bpsys, :bpdia, :o2, :pulse, :resp, :temp,)
 	end
 end
