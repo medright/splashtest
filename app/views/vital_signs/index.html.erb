@@ -3,7 +3,7 @@
 <%= link_to("Add Vitals", new_vital_sign_path) %>
 	<ul>
 	<% @vital_sign.each do |vital_sign| %>
-		<h3><%= link_to(vital_sign.temp, vital_signs_path(vital_sign)) %></h3>
+		<h3><%= link_to(vital_sign.temp, vital_sign_path(vital_sign)) %></h3>
 		<li><%= vital_sign.pulse %></li>
 	<% end %>
 	</ul>
