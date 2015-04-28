@@ -1,0 +1,23 @@
+<div class="signin">
+	<h1>(evr)signin:</h1>
+<ul>
+<%= form_tag(session_path) do %>
+<li>
+	<%= label_tag :email %>
+	<%= email_field_tag :email, nil, autofocus: true %>
+</li>
+<li>
+	<%= label_tag :password %>
+	<%= password_field_tag :password, nil %>
+</li>
+<li>
+	<%= label_tag :pin %>
+	<%= password_field_tag :pin, nil %>
+</li>
+<li>
+	<%= submit_tag "Sign In" %>
+</li>
+<% end %>
+</ul>
+
+</div>
