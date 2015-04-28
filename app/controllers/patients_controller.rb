@@ -1,4 +1,6 @@
 class PatientsController < ApplicationController
+	before_action :require_signin
+	
 	def index
 		@patient = Patient.all	
 	end

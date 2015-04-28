@@ -1,4 +1,6 @@
 class NotesController < ApplicationController
+	before_action :require_signin
+
 	def index
 		@note = Note.all
 	end

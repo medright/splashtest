@@ -1,4 +1,5 @@
 class MedsController < ApplicationController
+	before_action :require_signin
 
 	def index
 		@meds = Med.all

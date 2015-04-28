@@ -1,4 +1,6 @@
 class VitalSignsController < ApplicationController
+	before_action :require_signin
+	
 	def index
 		@vital_sign = VitalSign.all
 	end

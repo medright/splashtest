@@ -1,4 +1,5 @@
 class LabsController < ApplicationController
+	before_action :require_signin
 	def index
 		@lab = Lab.all
 	end

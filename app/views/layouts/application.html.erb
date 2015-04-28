@@ -13,7 +13,13 @@
 			<div class="toptile">
 				<%= link_to("Pt's list", patients_path) %> 
 			  <%= link_to("Add Pt", new_patient_path) %>
-			  User: Dr Jackson <br>
+			  <% if current_user %>
+			  	User: <%= link_to current_user.email, current_user %> <br>
+			  	<%= link_to "Sign Out", session_path, method: :delete %>
+			  <% else %>
+			  	<%= link_to "Sign Up", signup_path %>
+					<%= link_to "Sign In", new_session_path %>
+				<% end %>
 			  Patient: John Doe
 			</div>
 			<div class="toptile">
@@ -46,7 +52,7 @@
 			  <%= link_to("Add Order", new_order_path) %>
 			</div>
 			<div class="rttile">
-				upload image
+				placehlld
 			</div>
 		</div>
 

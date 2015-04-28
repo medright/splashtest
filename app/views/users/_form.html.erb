@@ -1,0 +1,35 @@
+<ul class="form_ul">
+
+<%= form_for(@user) do |f| %>
+	<li>
+		<%= f.label :email %><br/>
+		<%= f.text_field :email, autofocus: true %>
+	</li>
+	<li>
+		<%= f.label :kind %><br/>
+		<%= f.text_field :kind %>
+	</li>
+	<li>
+		<%= f.label :password %><br/>
+		<%= f.password_field :password %>
+	</li>
+	<li>
+		<%= f.label :password_confirmation, "Confirm Password" %><br/>
+		<%= f.password_field :password_confirmation %>
+	</li>
+	<li>
+		<%= f.label :pin %><br/>
+		<%= f.text_field :pin %>
+	</li>
+	
+	<li>
+		<% if @user.new_record? %>
+			<%= f.submit "Create Account" %>
+		<% else %>
+			<%= f.submit "Update Account" %>
+		<% end %>
+		<%= link_to "Cancel", users_path %>
+	</li>
+	
+<% end %>
+</ul>

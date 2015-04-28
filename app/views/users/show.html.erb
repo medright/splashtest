@@ -1,0 +1,12 @@
+<nav>
+  <%= link_to("all users", users_path) %>
+  <%= link_to("edit", edit_user_path(@user)) %>
+  <%= link_to "delete", user_path(@user), method: :delete, data: { confirm: 'Are you sure?'} %>
+</nav>
+
+<div class="index">
+  <h3>User Name:</h3>
+  <p>
+    <%= @user.email %>
+  </p>
+</div>

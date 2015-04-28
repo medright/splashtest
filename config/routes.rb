@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resource :session
+  get "signup" => "users#new"
   resources :users
-  resources :users
+  
   namespace :api do
     resources :meds
     resources :patients
