@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
 		if user = User.authenticate(params[:email], params[:password], params[:pin])
 			session[:user_id] = user.id
 			flash[:notice] = "Welcome back, #{user.email}!"
-			redirect_to user
+			redirect_to(session[:intended_url] || user)
+			session[:intended_url] = nil
 		else
 			flash.now[:alert] = "Invalid login"
 			render :new

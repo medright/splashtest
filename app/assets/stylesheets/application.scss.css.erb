@@ -55,10 +55,15 @@ a {
 
 .toptile a {
 	color: #FF6600;
+	background-size: auto;
+	flex-grow: 1;
+	
 }
 
 .rttile a {
 	color: #FF6600;
+	background-size: auto;
+	flex-grow: 1;
 }
 
 .content {
@@ -116,6 +121,9 @@ TOPTILE
 	float: right;
 	overflow: auto;
 	display: flex;
+}
+
+.user {
 	flex-direction: column;
 }
 
@@ -128,6 +136,8 @@ RTTILE
 	height: 33vh;
 	background: #00FFFF;
 	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
 }
 
 .content label {

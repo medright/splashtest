@@ -1,3 +1,5 @@
+
+<div class="index">
 <h1 class="code">Code Status: <%= @patient.code %></h1>
 
 <nav>
@@ -6,7 +8,6 @@
   <%= link_to "delete", patient_path(@patient), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
 
-<div class="index">  
 <ul>
 	<li><%= @patient.first_name %>, <%= @patient.last_name %> <%= @patient.dob %> 
 	Allergies: <%= @patient.allergies %>, Code: <%= @patient.code %>
@@ -67,6 +68,9 @@
 	</li>
 	<li>Temp: 
 		<%= @patient.temp %>
+	</li>
+	<li>Provider: 
+		<%= @patient.provider_id %>
 	</li>
 </ul>
 </div>

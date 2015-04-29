@@ -10,17 +10,14 @@
 
 		
 		<div class="topbar">
-			<div class="toptile">
-				<%= link_to("Pt's list", patients_path) %> 
-			  <%= link_to("Add Pt", new_patient_path) %>
+			<div class="toptile user">
 			  <% if current_user %>
-			  	User: <%= link_to current_user.email, current_user %> <br>
+			  	<%= link_to current_user.email, current_user %> <br>
 			  	<%= link_to "Sign Out", session_path, method: :delete %>
 			  <% else %>
 			  	<%= link_to "Sign Up", signup_path %>
 					<%= link_to "Sign In", new_session_path %>
 				<% end %>
-			  Patient: John Doe
 			</div>
 			<div class="toptile">
 				<%= link_to("Notes list", notes_path) %>
@@ -35,7 +32,7 @@
 			  <%= link_to("Add Vitals", new_vital_sign_path) %>
 			</div>
 			<div class="toptile">
-				<%= link_to("Meds list", root_path) %>
+				<%= link_to("Meds list", meds_path) %>
 			  <%= link_to("Add Med", new_med_path) %>   
 			</div>
 		</div>
@@ -52,7 +49,8 @@
 			  <%= link_to("Add Order", new_order_path) %>
 			</div>
 			<div class="rttile">
-				placehlld
+				<%= link_to("Pt's list", patients_path) %> 
+			  <%= link_to("Add Pt", new_patient_path) %>
 			</div>
 		</div>
 
