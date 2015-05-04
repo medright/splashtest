@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150427210225) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "labs", force: :cascade do |t|
     t.string   "na"
     t.string   "cl"
@@ -42,7 +45,7 @@ ActiveRecord::Schema.define(version: 20150427210225) do
     t.string   "ordering_provider"
   end
 
-  add_index "meds", ["consumer_id"], name: "index_meds_on_consumer_id"
+  add_index "meds", ["consumer_id"], name: "index_meds_on_consumer_id", using: :btree
 
   create_table "notes", force: :cascade do |t|
     t.string   "service"
@@ -56,8 +59,8 @@ ActiveRecord::Schema.define(version: 20150427210225) do
     t.datetime "updated_at",        null: false
   end
 
-  add_index "notes", ["ordering_provider"], name: "index_notes_on_ordering_provider"
-  add_index "notes", ["patient"], name: "index_notes_on_patient"
+  add_index "notes", ["ordering_provider"], name: "index_notes_on_ordering_provider", using: :btree
+  add_index "notes", ["patient"], name: "index_notes_on_patient", using: :btree
 
   create_table "orders", force: :cascade do |t|
     t.string   "name"
@@ -69,8 +72,8 @@ ActiveRecord::Schema.define(version: 20150427210225) do
     t.datetime "updated_at",        null: false
   end
 
-  add_index "orders", ["ordering_provider"], name: "index_orders_on_ordering_provider"
-  add_index "orders", ["patient"], name: "index_orders_on_patient"
+  add_index "orders", ["ordering_provider"], name: "index_orders_on_ordering_provider", using: :btree
+  add_index "orders", ["patient"], name: "index_orders_on_patient", using: :btree
 
   create_table "patients", force: :cascade do |t|
     t.string   "first_name"
