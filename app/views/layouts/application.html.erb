@@ -43,6 +43,7 @@
 		<div class="rtbar">
 			<div class="rttile">
 				start stream
+				<%= link_to "Sign Out", session_path, method: :delete %>
 			</div>
 			<div class="rttile">
 				<%= link_to("Orders list", orders_path) %>
