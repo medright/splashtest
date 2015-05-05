@@ -31,7 +31,7 @@ body {
 }
 
 .topbar {
-	display: -webkit-flex;
+	display: flex;
 	flex-wrap: nowrap;
 	border: 1px solid red;
 	width: 100vw;
@@ -40,9 +40,10 @@ body {
 }
 
 .rtbar {
-	display: -webkit-flex;
+	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: nowrap;
 	flex-grow: 1;
 	column-count: 1;
 	overflow: scroll;
