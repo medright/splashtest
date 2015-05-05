@@ -42,10 +42,9 @@ body {
 .rtbar {
 	display: -webkit-flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	flex-grow: 1;
 	column-count: 1;
-	-webkit-box-orient: vertical;
 	overflow: scroll;
 	border: 1px #B2F0B2 solid;
 	width: 10vw;
@@ -151,6 +150,7 @@ RTTILE
 	display: -webkit-flex;
 	flex-direction: column;
 	text-align: center;
+	justify-content: flex-start;
 	float: bottom;
 }
 
