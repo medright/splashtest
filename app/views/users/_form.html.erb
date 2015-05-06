@@ -7,7 +7,7 @@
 	</li>
 	<li>
 		<%= f.label :kind %><br/>
-		<%= f.text_field :kind %>
+		<%= f.select :kind, options_for_select(%w[Consumer Provider]) %>
 	</li>
 	<li>
 		<%= f.label :password %><br/>
