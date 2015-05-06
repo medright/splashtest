@@ -1,10 +1,10 @@
+<div class="index">
 <nav>
   <%= link_to("all labs", labs_path) %>
   <%= link_to("edit", edit_lab_path(@lab)) %>
   <%= link_to "delete", lab_path(@lab), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
 
-<div class="index">
   <h3>Sodium:</h3>
   <p>
     <%= @lab.na %>

@@ -1,5 +1,6 @@
+<div class="index">
 <nav>
-  <%= link_to("all meds", root_path) %>
+  <%= link_to("all meds", meds_path) %>
   <%= link_to("edit", edit_med_path(@med)) %>
   <%= link_to "delete", med_path(@med), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
@@ -25,4 +26,4 @@
     <%= @med.ordering_provider %>
   </p>
 </article>
-
+</div>
