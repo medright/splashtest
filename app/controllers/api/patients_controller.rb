@@ -6,7 +6,7 @@ class Api::PatientsController < ApplicationController
 	end
 
 	def show
-		@patient = Patient.find_by(params[first_name: '', last_name: ''])
+		@patient = Patient.find_by(params[:first_name], params[:last_name])
 		render json: @patient
 	end
 

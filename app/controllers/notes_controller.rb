@@ -40,6 +40,6 @@ class NotesController < ApplicationController
 
 	def note_params
 		params.require(:note).permit(:service, :subjective, :objective, :assessment,
-		 :plan, :ordering_provider, :patient)
+		 :plan, :ordering_provider, :patient, :user_id)
 	end
 end
