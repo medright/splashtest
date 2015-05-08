@@ -30,7 +30,7 @@ class VitalSignsController < ApplicationController
 	end
 
 	def destroy
-		@vital_sign = VitalSign.find(params[:id])
+		@vital_sign = current_user.vital_sign.find(params[:id])
 		@vital_sign.destroy
 		redirect_to vital_signs_url
 	end
