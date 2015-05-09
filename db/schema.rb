@@ -11,10 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507185003) do
+ActiveRecord::Schema.define(version: 20150508193536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "consumers", force: :cascade do |t|
+    t.string   "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "labs", force: :cascade do |t|
     t.string   "na"
@@ -108,6 +114,12 @@ ActiveRecord::Schema.define(version: 20150507185003) do
     t.string   "pulse"
   end
 
+  create_table "providers", force: :cascade do |t|
+    t.string   "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "kind"
     t.string   "email"
@@ -124,8 +136,10 @@ ActiveRecord::Schema.define(version: 20150507185003) do
     t.string   "pulse"
     t.string   "resp"
     t.string   "temp"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "provider_id"
+    t.integer  "consumer_id"
   end
 
 end
