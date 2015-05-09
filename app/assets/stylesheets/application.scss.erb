@@ -5,7 +5,6 @@ body {
 }
 
 .content .signin {
-	display: flex;
    background-image: url(<%= asset_path 'ev_login.jpg' %>);
    background-size: 100%;
    background-repeat: no-repeat;
@@ -13,7 +12,6 @@ body {
 }
 
 .content .signup {
-	display: flex;
    background-image: url(<%= asset_path 'evrsignup.jpg' %>);
    background-size: 100%;
    background-repeat: no-repeat;
@@ -21,12 +19,12 @@ body {
 }
 
 .body, .content, h1, .signup {
-	display: -webkit-flex;
+	display: flex;
 	display: inline-block;
 }
 
 .body, .content, h1, .signin {
-	display: -webkit-flex;
+	display: flex;
 	display: inline-block;
 	margin: 0;
 }
@@ -164,7 +162,7 @@ RTTILE
 ***********************************/
 
 .rttile {
-	display: -webkit-flex;
+	display: flex;
 	width: 10vw;
 	height: 25vh;
 	background: #00FFFF;
