@@ -1,6 +1,8 @@
 <div class="index">
 <h3>Med list:</h3>
+<div>
 <%= link_to("Add Med", new_med_path) %>
+</div>	
 	<ul>
 	<% @meds.each do |med| %>
 		<h3><%= link_to(med.name, med_path(med)) %></h3>

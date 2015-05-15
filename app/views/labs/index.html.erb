@@ -1,6 +1,8 @@
 <div class="index">
 <h3>Labs list:</h3>
+<div>
 <%= link_to("Add Labs", new_lab_path) %>
+</div>
 	<ul>
 	<% @lab.each do |lab|%>
 		<h3><%= link_to(lab.na, lab_path(lab)) %></h3>

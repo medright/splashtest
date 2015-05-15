@@ -1,8 +1,8 @@
 <div class="index">
 <h3>Users list:</h3>
-
+<div>
 <%= link_to("Add User", new_user_path) %>
-
+</div>
 <ul>
 <% @users.each do |user|%>
 	<h2><%= link_to(user.email, user_path(user)) %></h2>

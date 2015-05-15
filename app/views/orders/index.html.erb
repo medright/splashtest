@@ -1,6 +1,8 @@
 <div class="index">
 <h3>Order list:</h3>
+<div>
 <%= link_to("Add Order", new_order_path) %>
+</div>
 	<ul>
 	<% @order.each do |order|%>
 		<h3><%= link_to(order.name, order_path(order)) %></h3>

@@ -1,8 +1,8 @@
 <div class="index">
 <h3>Patient list:</h3>
-
+<div>
 <%= link_to("Add Patient", new_patient_path) %>
-
+</div>
 <ul>
 <% @patient.each do |patient|%>
 	<h2><%= link_to(patient.first_name, patient_path(patient)) %></h2>

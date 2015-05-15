@@ -24,9 +24,9 @@
 	
 	<li>
 		<% if @user.new_record? %>
-			<%= f.submit "Create Account" %>
+			<%= f.submit "Create Account", class: 'btn' %>
 		<% else %>
-			<%= f.submit "Update Account" %>
+			<%= f.submit "Update Account", class: 'btn' %>
 		<% end %>
 		<%= link_to "Cancel", users_path %>
 	</li>
