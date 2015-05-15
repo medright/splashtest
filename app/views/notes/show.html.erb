@@ -5,6 +5,7 @@
   <%= link_to "delete", note_path(@note), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
 
+<article>
   <h3>Type:</h3>
   <p>
     <%= @note.service %>
@@ -29,5 +30,6 @@
   <p>
     <%= @note.ordering_provider %>
   </p>
+</article>
 </div>
 

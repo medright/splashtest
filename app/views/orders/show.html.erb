@@ -5,6 +5,7 @@
   <%= link_to "delete", order_path(@order), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
 
+<article>
   <h3>Name:</h3>
   <p>
     <%= @order.name %>
@@ -25,5 +26,6 @@
   <p>
     <%= @order.patient %>
   </p>
+</article>
 </div>
 

@@ -1,77 +1,79 @@
 <div class="index">
-<h3 class="code">Code Status: <%= @patient.code %></h3>
-
 <nav>
   <%= link_to("all patients", patients_path) %>
   <%= link_to("edit", edit_patient_path(@patient)) %>
   <%= link_to "delete", patient_path(@patient), method: :delete, data: { confirm: 'Are you sure?'} %>
 </nav>
 
-<ul>
-	<li><%= @patient.first_name %>, <%= @patient.last_name %> <%= @patient.dob %> 
-	Allergies: <%= @patient.allergies %>, Code: <%= @patient.code %>
-	</li>
-	<li>Orders: 
-		<%= @patient.orders %>
-	</li>
-	<li>Notes: 
-		<%= @patient.notes %>
-	</li>
-	<li>Na: 
-		<%= @patient.cbcNa %>
-	</li>
-	<li>Cl: 
-		<%= @patient.cbcCl %>
-	</li>
-	<li>BUN: 
-		<%= @patient.cbcBUN %>
-	</li>
-	<li>K: 
-		<%= @patient.cbcK %>
-	</li>
-	<li>HCO3: 
-		<%= @patient.cmpHco3 %>
-	</li>
-	<li>Cr:
-		<%= @patient.cmpCr %>
-	</li>
-	<li>WBC: 
-		<%= @patient.cbcWbc %>
-	</li>
-	<li>HGB: 
-		<%= @patient.hbg %>
-	</li>
-	<li>HTC: 
-		<%= @patient.htc %>
-	</li>
-	<li>PLT: 
-		<%= @patient.plt %>
-	</li>
-	<li>Glucose: 
-		<%= @patient.glucose %>
-	</li>
-	<li>BPSYS: 
-		<%= @patient.bpSys %>
-	</li>
-	<li>BPDIA: 
-		<%= @patient.bpDia %>
-	</li>
-	<li>O2: 
-		<%= @patient.o2 %>
-	</li>
-	<li>Pulse: 
-		<%= @patient.pulse %>
-	</li>
-	<li>Resp: 
-		<%= @patient.resp %>
-	</li>
-	<li>Temp: 
-		<%= @patient.temp %>
-	</li>
-	<li>Provider: 
-		<%= @patient.provider_id %>
-	</li>
-</ul>
+<article>
+	<h3 class="code">Code Status: <%= @patient.code %></h3>
+	
+	<ul>
+		<li><%= @patient.first_name %>, <%= @patient.last_name %> <%= @patient.dob %> 
+		Allergies: <%= @patient.allergies %>, Code: <%= @patient.code %>
+		</li>
+		<li>Orders: 
+			<%= @patient.orders %>
+		</li>
+		<li>Notes: 
+			<%= @patient.notes %>
+		</li>
+		<li>Na: 
+			<%= @patient.cbcNa %>
+		</li>
+		<li>Cl: 
+			<%= @patient.cbcCl %>
+		</li>
+		<li>BUN: 
+			<%= @patient.cbcBUN %>
+		</li>
+		<li>K: 
+			<%= @patient.cbcK %>
+		</li>
+		<li>HCO3: 
+			<%= @patient.cmpHco3 %>
+		</li>
+		<li>Cr:
+			<%= @patient.cmpCr %>
+		</li>
+		<li>WBC: 
+			<%= @patient.cbcWbc %>
+		</li>
+		<li>HGB: 
+			<%= @patient.hbg %>
+		</li>
+		<li>HTC: 
+			<%= @patient.htc %>
+		</li>
+		<li>PLT: 
+			<%= @patient.plt %>
+		</li>
+		<li>Glucose: 
+			<%= @patient.glucose %>
+		</li>
+		<li>BPSYS: 
+			<%= @patient.bpSys %>
+		</li>
+		<li>BPDIA: 
+			<%= @patient.bpDia %>
+		</li>
+		<li>O2: 
+			<%= @patient.o2 %>
+		</li>
+		<li>Pulse: 
+			<%= @patient.pulse %>
+		</li>
+		<li>Resp: 
+			<%= @patient.resp %>
+		</li>
+		<li>Temp: 
+			<%= @patient.temp %>
+		</li>
+		<li>Provider: 
+			<%= @patient.provider_id %>
+		</li>
+	</ul>
+	</article>
 </div>
 
 
