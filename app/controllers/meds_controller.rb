@@ -39,6 +39,6 @@ class MedsController < ApplicationController
 	private
 
 	def med_params
-		params.require(:med).permit(:name, :dose, :dose_timing, :ordering_provider, :route, :start_date, :end_date)
+		params.require(:med).permit(:name, :dose, :dose_timing, :ordering_provider, :route, :start_date, :end_date, :user_id)
 	end
 end

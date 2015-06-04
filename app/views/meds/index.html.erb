@@ -5,7 +5,7 @@
 </div>	
 	<ul>
 	<% @meds.each do |med| %>
-		<h3><%= link_to(med.name, med_path(med)) %></h3>
+		<h3><%= link_to(med.name, med_path(med)) %><%= link_to("edit", edit_med_path(med)) %></h3>
 		<li><%= med.name %>, <%= med.dose %> <%= med.route %> <%= med.dose_timing %>
 			<%= med.ordering_provider %>, 
 		</li>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150508193536) do
+ActiveRecord::Schema.define(version: 20150515185131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150508193536) do
     t.string   "glucose"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   create_table "meds", force: :cascade do |t|
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(version: 20150508193536) do
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.string   "ordering_provider"
+    t.integer  "user_id"
   end
 
   add_index "meds", ["consumer_id"], name: "index_meds_on_consumer_id", using: :btree
@@ -63,7 +65,7 @@ ActiveRecord::Schema.define(version: 20150508193536) do
     t.string   "patient"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-    t.string   "user_id"
+    t.integer  "user_id"
   end
 
   add_index "notes", ["ordering_provider"], name: "index_notes_on_ordering_provider", using: :btree
@@ -78,6 +80,7 @@ ActiveRecord::Schema.define(version: 20150508193536) do
     t.string   "patient"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.integer  "user_id"
   end
 
   add_index "orders", ["ordering_provider"], name: "index_orders_on_ordering_provider", using: :btree
@@ -140,6 +143,7 @@ ActiveRecord::Schema.define(version: 20150508193536) do
     t.datetime "updated_at",  null: false
     t.integer  "provider_id"
     t.integer  "consumer_id"
+    t.integer  "user_id"
   end
 
 end
