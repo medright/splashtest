@@ -1,12 +1,17 @@
 <div class="index">
 <h3>Vitals list:</h3>
-<div>
+<nav>
 <%= link_to("Add Vitals", new_vital_sign_path) %>
-</div>
+</nav>
 	<ul>
 	<% @vital_sign.each do |vital_sign| %>
-		<h3><%= link_to(vital_sign.temp, vital_sign_path(vital_sign)) %></h3>
-		<li><%= vital_sign.pulse %></li>
+		<h3><%= link_to(vital_sign.created_at, vital_sign_path(vital_sign)) %></h3>
+		<li><%= vital_sign.pulse %> pulse</li>
+		<li><%= vital_sign.bpsys %> BPS</li>
+		<li><%= vital_sign.bpdia %> BPD</li>
+		<li><%= vital_sign.o2 %> %  O2</li>
+		<li><%= vital_sign.temp %> temp</li>
+		<li><%= vital_sign.resp %> respirations</li>
 	<% end %>
 	</ul>
 </div>
