@@ -1,4 +1,6 @@
 class Api::ProtocolsController < Api::ApiController
+	skip_before_filter :verify_authenticity_token
+	protect_from_forgery with: :null_session
 
 	def index
 		render json: Protocol.all
