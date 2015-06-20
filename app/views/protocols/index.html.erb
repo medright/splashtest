@@ -1,0 +1,8 @@
+<div class="index">
+<h1>Protocol count: <%= @protocols.size %></h1>
+<ul>
+	<% @protocols.each do |protocol| %>
+	<li><%= link_to(protocol.created_at, "protocols/#{protocol.created_at}") %> : <%= protocol.amc %></li>
+	<% end %>
+</ul>
+</div>

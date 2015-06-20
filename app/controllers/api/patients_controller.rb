@@ -1,5 +1,4 @@
-class Api::PatientsController < ApplicationController
-	skip_before_filter :verify_authenticity_token
+class Api::ProtocolsController < Api::ApiController
 
 	def index
 		render json:	Patient.all

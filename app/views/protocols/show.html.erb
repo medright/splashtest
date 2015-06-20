@@ -1,0 +1,14 @@
+<nav>
+  <%= link_to("all protocols", protocols_path) %>
+</nav>
+
+<div class="index">
+  <h3>Document Time:</h3>
+  <p>
+    <%= @protocols.created_at %>
+  </p>
+  <h3>AMC:</h3>
+  <p>
+    <%= @protocols.amc %>
+  </p>
+</div>

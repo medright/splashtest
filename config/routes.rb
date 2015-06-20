@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :meds
     resources :patients
+    resources :protocols
   end
 
     resources :protocols
