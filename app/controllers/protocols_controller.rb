@@ -29,7 +29,7 @@ class ProtocolsController < ApplicationController
 	private
 
 	def protocol_params
-		params.require(:protocol).permit(:amc)
+		params.require(:protocol).permit(:amc, :id, :created_at)
 	end
 
 

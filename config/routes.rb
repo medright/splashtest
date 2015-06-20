@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     resources :protocols
   end
 
+    get 'protocols' => 'protocols#index'
+    get 'protocols/:id' => 'protocols#show'
+
     resources :protocols
     resources :patients
 
