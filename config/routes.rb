@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :patients
   end
 
+    resources :protocols
     resources :patients
 
     resources :notes
