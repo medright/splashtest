@@ -2,7 +2,8 @@
 <h1>Protocol count: <%= @protocols.size %></h1>
 <ul>
 	<% @protocols.each do |protocol| %>
-	<li><%= link_to(protocol.created_at, "protocols/#{protocol.id}") %> : <%= protocol.amc %></li>
+	<li>Created @: <%= link_to(protocol.created_at, "protocols/#{protocol.id}") %></li>
+	<li>Protocol data: <%= protocol.amc %></li>
 	<% end %>
 </ul>
 </div>
