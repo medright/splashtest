@@ -1,4 +1,4 @@
-class Api::ProtocolsController < Api::ApiController
+class Api::MedsController < Api::ApiController
 
 	def index
 		render json:	Med.all

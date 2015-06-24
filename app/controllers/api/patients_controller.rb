@@ -1,4 +1,4 @@
-class Api::ProtocolsController < Api::ApiController
+class Api::PatientsController < Api::ApiController
 
 	def index
 		render json:	Patient.all
@@ -20,7 +20,7 @@ class Api::ProtocolsController < Api::ApiController
 
 	private
 	def list_params
-		params.require(:pateint).permit(:first_name, :last_name, :dob, :allergies, :code,
+		params.require(:patient).permit(:first_name, :last_name, :dob, :allergies, :code,
 		 :notes, :orders, :cbcNa, :cbcCl, :cbcBUN, :cbcK, :cmpHco3, :cmpCr, :cbcWbc, :hbg,
 		 :htc, :pls, :glucose, :bpSys, :bpDia, :resp, :temp, :o2, :provider_id, :consumer_id)
 	end
